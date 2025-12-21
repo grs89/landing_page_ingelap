@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ingelap — Instalaciones Eléctricas & Sistemas</title>
+  <meta name="description" content="Diseño, Construcción, Mantenimiento y Asesoría en Instalaciones Eléctricas, Cableado Estructurado, CCTV, Control de Acceso y Sistemas de Detección de Incendio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Ingelap<span class="dot">.com.co</span></a>
+      <nav class="nav" id="nav">
+        <a href="#services">Servicios</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Soluciones integrales en instalaciones eléctricas y seguridad.</h1>
+          <p>Diseño, Construcción, Mantenimiento y Asesoría en Instalaciones Eléctricas, Cableado Estructurado, CCTV, Control de Acceso y Sistemas de Detección de Incendio.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#services">Ver servicios</a>
+            <a class="btn ghost" href="#contact">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden>
+          <svg viewBox="0 0 600 400" class="visual-svg">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#2b6ef6"/>
+                <stop offset="1" stop-color="#7c3aed"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="600" height="400" rx="20" fill="url(#g1)" opacity="0.12"/>
+            <g fill="#fff" opacity="0.9">
+              <circle cx="120" cy="100" r="38"/>
+              <rect x="240" y="60" width="220" height="120" rx="12"/>
+              <rect x="60" y="220" width="480" height="120" rx="8"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-lead">Soluciones a medida para empresas y residencias, integrando seguridad y eficiencia energética.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Diseño</h3>
+            <p>Proyectos eléctricos y de seguridad con planos y especificaciones técnicas completas.</p>
+          </article>
+          <article class="card">
+            <h3>Construcción</h3>
+            <p>Instalación profesional de sistemas eléctricos, cableado estructurado y cámaras.</p>
+          </article>
+          <article class="card">
+            <h3>Mantenimiento</h3>
+            <p>Planes preventivos y correctivos para garantizar continuidad operativa.</p>
+          </article>
+          <article class="card">
+            <h3>Asesoría</h3>
+            <p>Consultoría técnica, auditorías y optimización de sistemas existentes.</p>
+          </article>
+          <article class="card">
+            <h3>CCTV & Control de Acceso</h3>
+            <p>Monitoreo inteligente, integración y control de flujos de entrada.</p>
+          </article>
+          <article class="card">
+            <h3>Detección de Incendio</h3>
+            <p>Sistemas normativos de alarma y detección para protección temprana.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>Experiencia, calidad y cumplimiento</h2>
+          <p>En Ingelap.com.co combinamos ingeniería y buenas prácticas para entregar proyectos seguros, eficientes y escalables. Trabajamos con estándares y equipos certificados.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><strong>+10</strong><span>Años de experiencia</span></div>
+          <div class="stat"><strong>+500</strong><span>Proyectos</span></div>
+          <div class="stat"><strong>24/7</strong><span>Soporte y mantenimiento</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Pide una cotización o una visita técnica.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-grid">
+            <input type="text" name="name" placeholder="Nombre" required />
+            <input type="email" name="email" placeholder="Correo electrónico" required />
+            <input type="tel" name="phone" placeholder="Teléfono" />
+            <select name="service">
+              <option value="">Servicio de interés</option>
+              <option>Diseño</option>
+              <option>Construcción</option>
+              <option>Mantenimiento</option>
+              <option>Asesoría</option>
+              <option>CCTV / Control de Acceso</option>
+              <option>Detección de Incendio</option>
+            </select>
+          </div>
+          <textarea name="message" placeholder="Mensaje" rows="4"></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Enviar</button>
+            <span class="form-note">O llama al +57 300 5729333</span>
+          </div>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <strong>Ingelap.com.co</strong> — Instalaciones y Sistemas</div>
+      <div class="footer-links"><a href="#">Política de privacidad</a><a href="#">Términos</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
